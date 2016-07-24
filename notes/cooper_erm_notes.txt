@@ -1,0 +1,45 @@
+Business in the US: Who Owns It, and How Much Tax Do They Pay?
+M. Cooper, J. McClelland, J. Pearce, R. Prisinzano, J. Sullivan
+D. Yagan, O. Zidar, E. Zwick  
+
+Goals of the paper:
+   (1) Estimate average federal tax rates on different business income
+   (2) Estimate tax rates/tax revenues under 1980 composition of firms
+
+Relevant statistics:
+   (1) Figure 1, p. 92
+       1980 vs 2012 composition of business income (C,S,SP,P)
+       1980: C= 80%, SP= 20%
+       post TRA86: growth in S,P, shrinking C,SP
+       2012: C= 50%, SP= 10%, S= 15%, P= 25% roughly
+  
+   (2) Tax forms filed
+       C:  1120 for corporate income, owners' form for distributions
+       S:  1120S, Schedule K-1 (owners are individuals) 
+       SP: 1040, Schedule C
+       P:  1065, Schedule K-1 (owners can be individuals, C-corps, S-corps,
+           foreigners, tax-exempt, estates, trusts, partnerships)
+
+   (3) Info on partnerships:
+       (a) most income goes to individuals (32%) and other partnerships (26%)
+       (b) 80% of income is in finance (incl. holding co) and prof services
+       (c) 75% is in top 1% AGI 
+       (d) most "opaque" for IRS: 30% of income was problematic
+           (i) 20% not traceable to ultimate owner
+          (ii) 10% had "circular" pattern with a circle of partners
+               shifting income around in a circle
+
+   (4) Answer to their question of average federal tax rates
+       C:  31.6%
+       S:  25.0%
+       SP: 13.6%
+       P:  15.9%
+       Under 1980 composition, crude estimate is 100 billion more revenue 
+       in 2011
+
+   (5) Some comments
+       (a) Marginal tax rates are the relevant measure, so hard to assess
+           any counterfactuals
+       (b) It is not clear having the administrative data was better
+           than what is available to the public
+
