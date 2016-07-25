@@ -1,0 +1,48 @@
+IRS and NIPA business incomes
+=============================
+Cooper et al show most of the data as shares, but this masks the 
+fact that there are big gaps between IRS and BEA data, especially
+for pass through entities.  
+See also AGI_BEAvsIRS.pdf
+
+                             1980      2012
+                            ---------------
+   * IRS Business incomes
+       No. returns               
+         Total                 13        33   mil                
+         Corporations           3         6
+           C                    2         2 
+           S                   .5         4
+           RIC,REIT             0      .002  
+         Sole prop, nonfarm     9        24
+         Partnerships         1.5         3
+           General            1.2        .6
+           Limited             .2        .4
+           LLC                 .1         2 
+
+       Net income less def
+         Total                316     2,955   bil current $
+         Corporations         254     1,872
+           C                  236     1,051
+           S                    3       476
+           RIC,REIT            15       344
+         Sole prop, nonfarm    55       305
+         Partnerships           8       778 <--- Much larger than  
+           General             na        95      amounts on 1040 or
+           Limited             na       260      in BEA personal income
+           LLC                 na       242      (See AGI_BEAvsIRS.pdf)
+
+   * NIPA GDP and incomes
+     GDP                    2,863    16,155   bil current $
+     Corp profits             224     1,998
+       Taxes                   84       448
+       Net div                 74       859
+       Undist                  89       691
+     Rental                    20       525
+     Net interest             186       528
+     Proprietors' inc         172     1,241 <--- large imputations here
+     Compensation           1,626     8,610      (See AGI_BEAvsIRS.pdf)
+     
+     NOTE: The remaining income is IBT+subsidies+bus tran
+
+
