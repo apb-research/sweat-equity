@@ -1,0 +1,41 @@
+LLC partnerships have grown a lot...why?
+
+
+  Advantages:
+    * Limited liability status (first introduced in Wyoming 1977)
+    * No double taxation (only partners taxed) 
+    * More flexible memberships/participation rules than corporations
+    * After 1996, uncertainty resolved about status as taxable entity
+   
+  Disadvantages:
+    * Not allowed for banks, insurance companies
+    * Can't be publicly traded like corporations
+    * If using venture capital, tax exempt investors still pay 
+      unrelated business income tax (UBIT)
+    * Can't have tax qualified incentive stock option plans or
+      similar equity compensation plans
+
+
+    Who likes this:  real estate investors and non-bank financial companies 
+
+
+Differences between S corporations and LLC partnership:
+
+  S:
+
+   * Must have fewer than 100 shareholders (only US citizens)
+   * More formalities (bylaws etc.)
+   * Must be owned by individuals
+   * Can freely transfer stock
+   * More flexibility with respect to self-employment taxes
+   * One class of stock
+   * Can have only 1 owner
+
+  LLC:
+   * Can have unlimited members (and they can be foreign)
+   * Fewer formalities (bylaws etc.)
+   * Can be owned by corporations, other partnerships etc.
+   * Cannot freely transfer membership interest
+   * Less flexibility with respect to self-employment taxes
+   * Can allocate income/losses more easily
+   * Some states require at least 2 owners
