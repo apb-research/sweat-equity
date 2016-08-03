@@ -1,0 +1,25 @@
+I want to think about predictable implications of theory
+for small business financial accounts.
+
+Consider 2 businesses A and B  (with 1 owner in each case)
+and the following technologies
+
+  (A)  Y = F(KT,L),  KT=structures or equipment, L=labor
+
+        (Think: corner grocery store)
+
+
+  (B)  Y = G(KT1,KI,L1) = consumer services
+        XI = H(KT2,KI,L2) = new intangible
+        KT1+KT2 = structures or equipment
+        L1+L2 = total labor
+        KI = intangible capital (e.g., customer list, software, etc.)
+      
+        (Think: consulting firm)
+
+
+Q1:  What form of organization is best for A? for B?
+Q2:  How would A choose compensation for L? B for L1, and L2?
+Q3:  Would we expect to see different patterns in financial accounts,
+        e.g., when looking at compensation, sales, profits
+
