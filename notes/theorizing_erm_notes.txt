@@ -23,3 +23,25 @@ Q2:  How would A choose compensation for L? B for L1, and L2?
 Q3:  Would we expect to see different patterns in financial accounts,
         e.g., when looking at compensation, sales, profits
 
+
+
+
+Consider simpler case for consultant:
+
+    Y         = G(KT,KI,L1)
+    XI        = H(L2)
+
+    Meas Comp = W*L1 (or even lower)
+    Meas Prof = P*Y-W*L1-deltaT*P*KT
+    Meas ROA  = (P*Y-W*L1)/(P*KT) - deltaT
+              = (rT*KT+rI*KI+W*L2)/(P*KT) - deltaT
+              = i + (rI*KI+W*L2)/(P*KT)  > i,  where i=rT-deltaT
+   
+    Econ comp = W*L
+    Econ prof = P*Y+Q*XI - W*L - deltaT*KT+ deltaI*KI
+    ROA_T     = (P*Y-W*L1-deltaT*P*KT)/(P*KT) = rT-deltaT = i
+    ROA_I     = (Q*XI-W*L2-deltaI*Q*KI)/(Q*KI) = rI-deltaI = i
+
+
+
+
