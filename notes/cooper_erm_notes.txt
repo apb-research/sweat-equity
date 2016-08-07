@@ -23,8 +23,12 @@ Relevant statistics:
    (3) Info on partnerships:
        (a) most income goes to individuals (32%) and other partnerships (26%)
        (b) 80% of income is in finance (incl. holding co) and prof services
-       (c) 75% is in top 1% AGI 
-       (d) most "opaque" for IRS: 30% of income was problematic
+       (c) 75% is in top 1% AGI (as against 50% for C-corp or dividend income and only 15% for SP)
+       (d) on the extensive margin, i.e., fraction of individuals report positive income from P/S/SP/P across AGI bins
+            (i) for P/S: 70% (top 1%)and almost zero (bottom half)
+            (ii)for C: 80% (top 1%) and about 7% (bottom half)
+            (ii)for SP: about 15% across AGI
+       (e) most "opaque" for IRS: 30% of income was problematic
            (i) 20% not traceable to ultimate owner
           (ii) 10% had "circular" pattern with a circle of partners
                shifting income around in a circle
@@ -43,4 +47,3 @@ Relevant statistics:
        (b) It is not clear having the administrative data was better
            than what is available to the public
 
-Test of adding a line ...
