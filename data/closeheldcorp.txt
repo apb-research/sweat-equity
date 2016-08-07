@@ -1,0 +1,26 @@
+Series analyzer for FL103164123.Q
+Nonfinancial corporate business; closely held corporate equities; liability
+
+Data Source
+
+Beginning in 1996, level estimated by FOF Section as the sum of the market value of 
+nonfinancial C-corporations and S-corporations. The market value of S-corporations 
+is estimated by multiplying the net worth data of S-corporations in nonfinancial 
+industries (identified by 2-digit NAICS codes) from the IRS, SOI Table S- Corporation 
+Returns: Balance Sheet and Income Statement Items, by Major Industry, by the average 
+ratio of market value to net worth from Standard and Poor's Compustat for public 
+companies in the same nonfinancial industries. The market value of C-corporations 
+is estimated by multiplying the revenue data of companies that appear on Forbes' annual 
+list of America's Largest Private Companies by the ratio of total market value to total 
+revenue of public companies from Standard and Poor's Compustat with similar industry, 
+employment, and revenue profiles. The total market value of C-corporations is split 
+between financial and nonfinancial corporations using the same splits available 
+from the S-corporations calculations. The total market value of C-corporations and 
+S-corporations is adjusted downward by 25 percent to reflect the lack of liquidity 
+of closely held shares. Prior to 1996, nonfinancial business' closely held equity is 
+included with nonfinancial business' public corporate equities ( FOF series FL103164113). 
+Series has no flows. Data for the most recent ten years show no significant seasonality.
+Add to Clipboard
+Last edited on: 04/18/2011 	External links:
+http://www.irs.gov/uac/SOI-Tax-Stats-S-Corporation-Statistics
+http://www.forbes.com/2007/11/08/largest-private-companies-biz-privates07-cx_sr_1108pri
