@@ -1,0 +1,16 @@
+
+Anmol
+1. summarize all the database of private firms
+2. read the paper by nyu people that compares NSSBF, Sageworks, Compustat
+3. think about the theory - cagetti stuff, calvet stuff
+4. continue with reading list
+
+Mohammad
+1. follow up on NSSBF details
+2. import katya's and NSSBF data into pandas
+3. continue with reading list
+
+Ellen
+1. check taxsim sch. K
+2. continue with reading list 
+
