@@ -1,0 +1,62 @@
+I- CHARACTERISTICS OF THE FIRM
+	Organization Demographics
+		- principal activity
+		- fiscal year
+	Personal Characteristics of Owner (q's based on classification
+		- SP: owner: joint w/ spouse? race, gender, age, edu, experience, active management?
+		- P: number of p, largest %, ind/company, race, gender, age, edu, exp, active management?
+		- S-corp and corp: # stockholders, largest %, ind/company, race, gender, age, edu, exp, active management?,
+			public/private, IPO year, established/purchased/inherited/publicly traded, year bought, family owned
+	Firm Demographics
+		- sites, level of activity (city/county/state...), computers use
+	Records (used in answering)
+		- IRS, worksheet, financial statement or accounting reports, bank statements
+		- FS/AR's compiled/reviewed/audited/management use only?
+II- SOURCES OF FINANCIAL SERVICES
+	Use of deposit services
+		- checking account balance, saving account balance
+	Use of credit and financing
+		- Credit Cards
+			o personal: monthly amount, payed in-full/after monthly payments?, interest, introductory rate?
+			o business/corporate: monthly amount, payed in-full/after monthly payments?, interest, introductory rate?
+		- Lines of credit: number, limit, amount owed, collateral
+		- Mortgages: number, principal, collateral
+		- Motor vehicle loans: number, principal, 
+		- Equipment loans: number, principal, collateral
+		- Loans from partners/stockholders: number, principal
+		- Capital lease: number, principal
+		- Other loans: number, principal, collateral
+	Most recent loan
+		- renewals: no. attempts,
+		- new: approved/denied
+			o approved: type, time, location, amount, collateral, maturity, interest, fees
+			o denied: type, time, location, amount, reason of denial
+	Use of other financial services: business transactions, cash management, sweep/zero accounts, lock box, banker's acceptance/letters of credit, manage 401k plans/pension funds/business trusts, brokerage services, credit card receipt processing/signiture-based transactions/pin-based debit transactions
+	Relationships with financial institutions: primary source, characteristics, location, how long?
+	Trade credit (on account): amount, number of suppliers, cash discounts, etc
+	New equity investment in the firm: amount, primary use
+		- S-corps and C-corps: amount, primary use, source
+III- INCOME AND EXPENSES
+		fiscal year, cash/accrural, total sales/total receipts, other income, total cost, breakdown of cost: salaries and wages, officers' compensation/guaranteed payment to partners
+	Sole proprietorships: net profit/loss (after tax)
+	Partnerships and S-corps: ordianry incom/loss
+	C-corps: taxable income, corporate tax, net gain/loss
+IV- BALANCE SHEET
+	Assets
+		- current
+			o cash holdings, accounts receivable and trade notes minus allowances for bad debts, inventory, other (convertable to cash within a year, eg bonds, stocks, prepaid expenses)
+		- noncurrent 
+			o investmetns (eg loans to shareholders/partners, real estate loans owed to the business), book value of land, net book value of buildings and equipments and other depreciable or intangible assets, other assets
+		- total
+	Liabilities and equity
+		- Liabilities: combined outstanding principal of loans/mortgage/notes/bonds/capital leases/nonrecourse loans, accounts payable, other current (due within one year), others, total
+		-Equity
+			o Sole proprietorships: total assets - total liabilities (calculated)
+			o Partnership equity: total equity (partners' capital accounts)
+			o S-corp and corp equity: total equity (Sched 1120S/1120)
+	Credit history
+		- bankruptcy, delinquent obligations (business/personal), judgments rendered (business/personal),
+		- personal assets of first owner: home/primary residence equity, net worth (excluding home and firm)
+
+	
+	
