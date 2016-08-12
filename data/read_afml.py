@@ -7,7 +7,6 @@ Created on Fri Aug 12 00:17:20 2016
 
 import numpy as np
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 
 industry_data=pd.read_excel('AFMLdata.xls',sheetname='industry')
@@ -17,7 +16,7 @@ important_industries=industry_data[(industry_data['sample']=='full sample') & (i
 
 
 data=industry_data[industry_data.industry.isin(important_industries.industry.values)]
-var='leverage'
+var='roa'
 
 
 excess_matched=data[(data['sample']=='matched sample') & (data['entity']=='private')][var].values-data[(data['sample']=='matched sample') & (data['entity']=='public')][var].values
