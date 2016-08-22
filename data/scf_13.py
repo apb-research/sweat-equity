@@ -452,6 +452,8 @@ scf['NETWORTH']=scf.ASSET-scf.DEBT
 #    NOTE: For 2004 forward, IRA and withdrawals from tax-deferred
 #    pension accounts added to INCOME below
 scf['INCOME']=scf.X5729.combine(zero,max)
+scf['INCOME2']=scf.X5702+scf.X5704+scf.X5706+scf.X5708+scf.X5710+\
+    scf.X5712+scf.X5714+scf.X5716+scf.X5718+scf.X5720+scf.X5722+scf.X5724
 
 ######   HH income components in previous calendar year  ######
 
@@ -501,6 +503,7 @@ scf['PENACCTWD']=scf.X6558+scf.X6566+scf.X6574\
         +(scf.X6971*conv(scf.X6972)).combine(zero,max)+(scf.X6977*conv(scf.X6978)).combine(zero,max)\
         +(scf.X6983*conv(scf.X6984)).combine(zero,max)
 scf.INCOME=scf.INCOME+scf.PENACCTWD
+scf.INCOME2=scf.INCOME2+scf.PENACCTWD
 scf.SSRETINC=scf.SSRETINC+scf.PENACCTWD
 
 # NOTE: There are questions about whether this has been a normal year\
