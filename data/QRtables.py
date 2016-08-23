@@ -10,6 +10,8 @@ import numpy as np
 import stats
 pd.options.display.float_format = '${:,.0f}'.format
 
+
+
 scf = pd.read_csv('scf.csv')
 
 ################## Table 2
@@ -47,7 +49,7 @@ income_by_busorg=pd.DataFrame(np.zeros((len(moments), len(pd.unique(scf.BUSORG))
 income_by_busorg.index=moments
 
 business_types_codes={1:'P', 2:'SP', 3:'S',\
-4:'C', 6:'Foreign',11:'LLP',0:'Inap'}
+4:'C', 6:'Foreign',11:'LLP',0:'No-Busines'}
 income_by_busorg.columns=business_types_codes.values()
 
 for bus in pd.unique(scf.BUSORG):
