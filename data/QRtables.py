@@ -17,7 +17,7 @@ i =0
 Q = [0, .01, .05, .1, .2, .4, .5, .6, .8, .9, .95, .99, 1]
 qi=[stats.quantile_1D(scf.INCOME,scf.WGT,q) for q in Q]
 qw=[stats.quantile_1D(scf.NETWORTH,scf.WGT,q) for q in Q]
-data_for_plotting=pd.DataFrame(np.vstack((qi,qw)),columns=Q, index=['income', 'wealth'])
+data_for_plotting=pd.DataFrame(np.vstack((qi,qw)),columns=[str(q) for q in Q], index=['income', 'wealth'])
 print('\n'+'TABLE 2:')
 print(data_for_plotting)
 
