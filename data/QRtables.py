@@ -25,28 +25,9 @@ pd.options.display.float_format = '{:,.2f}'.format
 
 ################## Table 3
 #Income (INCOME2 can also be used!)
-si= np.zeros(8)
-si[0]=stats.coeff_variation(scf.INCOME, scf.WGT)
-si[1]=stats.variance(np.log(scf.INCOME[(scf.INCOME>0)]),scf.WGT[(scf.INCOME>0)])
-si[2]=stats.gini(scf.INCOME, scf.WGT)
-
-si[3]=stats.loc(scf.INCOME, scf.WGT, stats.mean(scf.INCOME, scf.WGT))
-si[4]=stats.quantile_1D(scf.INCOME, scf.WGT, .99)/stats.quantile_1D(scf.INCOME, scf.WGT, .5)
-si[5]=stats.quantile_1D(scf.INCOME, scf.WGT, .9)/stats.quantile_1D(scf.INCOME, scf.WGT, .5)
-si[6]=stats.mean(scf.INCOME, scf.WGT)/stats.quantile_1D(scf.INCOME, scf.WGT, .5)
-si[7]=stats.quantile_1D(scf.INCOME, scf.WGT, .5)/stats.quantile_1D(scf.INCOME, scf.WGT, .3)
-
+si=stats.describe(scf.INCOME,scf.WGT)
 # Networth
-sw= np.zeros(8)
-sw[0]=stats.coeff_variation(scf.NETWORTH, scf.WGT)
-sw[1]=stats.variance(np.log(scf.NETWORTH[(scf.NETWORTH>0)]),scf.WGT[(scf.NETWORTH>0)])
-sw[2]=stats.gini(scf.NETWORTH, scf.WGT)
-
-sw[3]=stats.loc(scf.NETWORTH, scf.WGT, stats.mean(scf.NETWORTH, scf.WGT))
-sw[4]=stats.quantile_1D(scf.NETWORTH, scf.WGT, .99)/stats.quantile_1D(scf.NETWORTH, scf.WGT, .5)
-sw[5]=stats.quantile_1D(scf.NETWORTH, scf.WGT, .9)/stats.quantile_1D(scf.NETWORTH, scf.WGT, .5)
-sw[6]=stats.mean(scf.NETWORTH, scf.WGT)/stats.quantile_1D(scf.NETWORTH, scf.WGT, .5)
-sw[7]=stats.quantile_1D(scf.NETWORTH, scf.WGT, .5)/stats.quantile_1D(scf.NETWORTH, scf.WGT, .3)
+sw=stats.describe(scf.NETWORTH,scf.WGT)
 
 data_for_plotting=pd.DataFrame(np.vstack((si,sw)),columns=['Coefficient of variation','Variance of logs',\
      'Gini indexes','Location of mean','99-50 ratio', '90-50 ratio', 'Mean-to-median ratio',\
@@ -56,6 +37,38 @@ data_for_plotting=data_for_plotting.T
 print('\n'+'TABLE 3')
 print(data_for_plotting)
 
+#
+#
+moments=['Coefficient of variation','Variance of logs',\
+     'Gini indexes','Location of mean','99-50 ratio', '90-50 ratio', 'Mean-to-median ratio',\
+     '50-30 ratio']
+     
+income_by_busorg=pd.DataFrame(np.zeros((len(moments), len(pd.unique(scf.BUSORG)))))
+income_by_busorg.index=moments
+
+business_types_codes={1:'P', 2:'SP', 3:'S',\
+4:'C', 6:'Foreign',11:'LLP',0:'Inap'}
+income_by_busorg.columns=business_types_codes.values()
+
+for bus in pd.unique(scf.BUSORG):
+    income_by_busorg[business_types_codes[bus]]=stats.describe(scf[scf.BUSORG==bus].INCOME,scf[scf.BUSORG==bus].WGT)
+#
+income_by_busorg['overall']=si
 
 
+networth_by_busorg=pd.DataFrame(np.zeros((len(moments), len(pd.unique(scf.BUSORG)))))
+networth_by_busorg.index=moments
+networth_by_busorg.columns=business_types_codes.values()
+networth_by_busorg['overall']=sw
+
+for bus in pd.unique(scf.BUSORG):
+    networth_by_busorg[business_types_codes[bus]]=stats.describe(scf[scf.BUSORG==bus].NETWORTH,scf[scf.BUSORG==bus].WGT)
+
+
+print('\n'+'TABLE 4: INCOME by BUSORG')
+print(income_by_busorg)
+
+
+print('\n'+'TABLE 5: NETWORTH by BUSORG')
+print(networth_by_busorg)
 

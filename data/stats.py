@@ -59,8 +59,7 @@ def loc(series, weights, a):
         i +=1
     return s/weights.sum()
     
-    
-    
+        
 def quantile_1D(data, weights, quantile):
     """
     Compute the weighted quantile of a 1D numpy array.
@@ -103,4 +102,19 @@ def quantile_1D(data, weights, quantile):
     Pn = (Sn-0.5*sorted_weights)/np.sum(sorted_weights)
     # Get the value of the weighted median
     return np.interp(quantile, Pn, sorted_data)
+
+
+
+def describe(data,weights):
+    s= np.zeros(8)
+    s[0]=coeff_variation(data, weights)
+    s[1]=variance(np.log(data[(data>0)]),weights[(data>0)])
+    s[2]=gini(data, weights)
+
+    s[3]=loc(data, weights, mean(data, weights))
+    s[4]=quantile_1D(data, weights, .99)/quantile_1D(data, weights, .5)
+    s[5]=quantile_1D(data, weights, .9)/quantile_1D(data, weights, .5)
+    s[6]=mean(data, weights)/quantile_1D(data, weights, .5)
+    s[7]=quantile_1D(data, weights, .5)/quantile_1D(data, weights, .3)
+    return s
     
