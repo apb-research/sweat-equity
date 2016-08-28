@@ -30,7 +30,7 @@ pd.options.display.float_format = '{:,.2f}'.format
 
 data_for_plotting=pd.concat([stats.describe(scf.NETWORTH,scf.WGT),stats.describe(scf.INCOME,scf.WGT)],axis=1)
 
-data_for_plotting.columns=['INCOME','NETWORTH']
+data_for_plotting.columns=['NETWORTH','INCOME']
 print('\n'+'TABLE 3')
 print(data_for_plotting)
 
@@ -39,7 +39,7 @@ print(data_for_plotting)
 income_by_busorg=[]
 colnames=[]
 business_types_codes={1:'P', 2:'SP', 3:'S',\
-4:'C', 6:'Foreign',11:'LLP',0:'No-Busines'}
+4:'C', 6:'Foreign',11:'LLP',0:'No-Business'}
 
 for bus in pd.unique(scf.BUSORG):
     income_by_busorg.append(stats.describe(scf[scf.BUSORG==bus].INCOME,scf[scf.BUSORG==bus].WGT))
@@ -57,7 +57,7 @@ print(income_by_busorg)
 networth_by_busorg=[]
 colnames=[]
 business_types_codes={1:'P', 2:'SP', 3:'S',\
-4:'C', 6:'Foreign',11:'LLP',0:'No-Busines'}
+4:'C', 6:'Foreign',11:'LLP',0:'No-Business'}
 
 for bus in pd.unique(scf.BUSORG):
     networth_by_busorg.append(stats.describe(scf[scf.BUSORG==bus].NETWORTH,scf[scf.BUSORG==bus].WGT))
@@ -106,4 +106,4 @@ soleprops.columns=['SP-WAGE','SP-INCOME']
 
 wage_income=pd.concat([soleprops,partnerships,scorps],axis=1)
 print('\n'+'TABLE 5: INCOME,WAGES by BUSORG')
-print wage_income
+print(wage_income)
