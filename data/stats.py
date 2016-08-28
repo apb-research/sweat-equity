@@ -8,7 +8,7 @@ Calculates the statistics using the weights.
 """
 
 import numpy as np
-
+import pandas as pd
 def mean(series, weights):
     return (series*weights).sum()/weights.sum()
 
@@ -116,5 +116,10 @@ def describe(data,weights):
     s[5]=quantile_1D(data, weights, .9)/quantile_1D(data, weights, .5)
     s[6]=mean(data, weights)/quantile_1D(data, weights, .5)
     s[7]=quantile_1D(data, weights, .5)/quantile_1D(data, weights, .3)
-    return s
+    moments=['Coefficient of variation','Variance of logs',\
+     'Gini indexes','Location of mean','99-50 ratio', '90-50 ratio', 'Mean-to-median ratio',\
+     '50-30 ratio']
+     
+    return_data=pd.DataFrame(s,index=moments)
+    return return_data
     
