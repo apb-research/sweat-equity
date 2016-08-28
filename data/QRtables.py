@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import stats
 pd.options.display.float_format = '${:,.0f}'.format
+pd.set_option('expand_frame_repr', False)
 
 
 scf = pd.read_csv('scf.csv')
