@@ -1,0 +1,305 @@
+%% LyX 2.2.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{verbatim}
+\usepackage{babel}
+\begin{document}
+
+\title{Finding $p$}
+\maketitle
+
+\section{Rep agent with capital CES preferences}
+
+We start with the Planner's problem since the welfare theorems hold
+in this case. The guess for $p$ can then be obtained from the optimal
+allocation. 
+\[
+\max_{c_{c},c_{s},n,m,k_{c},k_{s}}E_{0}\sum_{t}\beta^{t}\frac{\left[\omega c_{c,t}^{\rho}+(1-\omega)c_{s,t}^{\rho}\right]^{\frac{1-\sigma}{\rho}}}{1-\sigma}-\frac{\left[\varphi n_{t}^{\varrho}+(1-\varphi)m_{t}^{\varrho}\right]^{\frac{1+\gamma}{\varrho}}}{1+\gamma}
+\]
+ subject to 
+\[
+c_{c}+k_{t+1}=(1-\delta)k_{t}+Ak_{c,t}^{\theta}n_{t}^{1-\theta}
+\]
+
+\[
+c_{s}=Zk_{s,t}^{\nu}m_{t}^{1-\nu}
+\]
+\[
+k_{c,t}+k_{s,t}=k_{t}
+\]
+
+The FOC for the planner's problem are The FOC for this problem are
+\[
+\omega c_{t}^{-\sigma}\left(\frac{c_{c,t}}{c_{t}}\right)^{\rho-1}=\phi_{c,t}
+\]
+\[
+(1-\omega)c^{-\sigma}\left(\frac{c_{s_{t}}}{c_{t}}\right)^{\rho-1}=\phi_{s,t}
+\]
+\[
+\varphi l^{\gamma}\left(\frac{n_{t}}{l_{t}}\right)^{\varrho-1}=\phi_{c,t}(1-\theta)\frac{y_{c,t}}{n_{t}}
+\]
+\[
+(1-\varphi)l^{\gamma}\left(\frac{m_{t}}{l_{t}}\right)^{\varrho-1}=\phi_{s,t}(1-\nu)\frac{y_{s,t}}{m_{t}}
+\]
+\[
+\phi_{c,t}=\beta E\left[1-\delta+\theta\left(\frac{y_{c,t+1}}{k_{c,t+1}}\right)\right]\phi_{c,t+1}
+\]
+\[
+\phi_{c,t}\theta\left(\frac{y_{c,t}}{k_{c,t}}\right)=\phi_{s,t}\nu\left(\frac{y_{s,t}}{k_{s,t}}\right)
+\]
+At the steady state first eliminate the multipliers
+\[
+\varphi l^{\gamma}\left(\frac{n}{l}\right)^{\varrho-1}=\omega c^{-\sigma}\left(\frac{c_{c}}{c}\right)^{\rho-1}(1-\theta)\frac{y_{c}}{n}
+\]
+\[
+(1-\varphi)l^{\gamma}\left(\frac{m}{l}\right)^{\varrho-1}=(1-\omega)c^{-\sigma}\left(\frac{c_{s}}{c}\right)^{\rho-1}(1-\nu)\frac{y_{s}}{m}
+\]
+\[
+\frac{k_{c}}{y_{c}}=\frac{\theta}{\frac{1}{\beta}-1+\delta}
+\]
+\[
+\omega\theta\left(\frac{y_{c}}{k_{c}}\right)=\nu(1-\omega)\left(\frac{c_{s}}{c_{c}}\right)^{\rho-1}\left(\frac{y_{s}}{k_{s}}\right)
+\]
+Taking ratios for the first two equations, we can eliminate the aggregate
+$c,l$: 
+\[
+\left(\frac{\varphi}{1-\varphi}\right)\left(\frac{n}{m}\right)^{\varrho}=\left(\frac{\omega}{1-\omega}\right)\left(\frac{c_{c}}{c_{s}}\right)^{\rho-1}\left(\frac{1-\theta}{1-\nu}\right)\left(\frac{y_{c}}{y_{s}}\right)
+\]
+Now lets define constants
+\[
+\bar{n}=\frac{n}{y_{c}},\bar{m}=\frac{m}{y_{s}},\bar{c}_{c}=\frac{c_{c}}{y_{c}},\bar{k}_{c}=\frac{k_{c}}{y_{c}},\bar{k}_{s}=\frac{k_{s}}{y_{s}}
+\]
+These constants solve
+\[
+\bar{k}_{c}=\frac{\theta}{\frac{1}{\beta}-1+\delta}
+\]
+\[
+\bar{c}_{c}=1-\delta[\bar{k}_{c}+\bar{k}_{s}\left(\frac{y_{s}}{y_{c}}\right)]
+\]
+\[
+\bar{n}=\left[A\bar{k}_{c}^{\theta}\right]^{\frac{-1}{1-\theta}}
+\]
+\[
+\bar{m}=\left[Z\bar{k}_{s}^{\nu}\right]^{\frac{-1}{1-\nu}}
+\]
+The steady state now solves the following two equations in $\frac{y_{s}}{y_{c}}$and
+$\bar{k}_{s}$
+\begin{equation}
+1=\left(\frac{\nu(1-\omega)}{\omega\theta}\right)\left(\frac{1}{\bar{c_{c}}}\right)^{\rho-1}\left(\frac{\bar{k}_{c}}{\bar{k}_{s}}\right)\left(\frac{y_{s}}{y_{c}}\right)^{\rho-1}\label{ss1}
+\end{equation}
+\begin{equation}
+\left(\frac{\varphi}{1-\varphi}\right)\left(\frac{\bar{n}}{\bar{m}}\right)^{\varrho}=\left(\frac{\omega}{1-\omega}\right)\left(\frac{\bar{c}_{c}}{1}\right)^{\rho-1}\left(\frac{1-\theta}{1-\nu}\right)\left(\frac{y_{c}}{y_{s}}\right)^{\rho-\varrho}\label{ss2}
+\end{equation}
+To bring it down to one equation in one unknown we now solve out for
+$\frac{y_{s}}{y_{c}}$ in terms of $\bar{k}_{s}$
+\[
+\frac{y_{s}}{y_{c}}=\left[\left(\frac{\nu(1-\omega)}{\omega\theta}\right)\left(\frac{\bar{k}_{c}}{\bar{k}_{s}}\right)\right]^{\frac{1}{1-\rho}}\left(1-\delta\left[\bar{k}_{c}+\bar{k}_{s}\left(\frac{y_{s}}{y_{c}}\right)\right]\right)
+\]
+This further simplifies to 
+\[
+\frac{y_{s}}{y_{c}}\left(1+\delta\bar{k}_{s}\left[\left(\frac{\nu(1-\omega)}{\omega\theta}\right)\left(\frac{\bar{k}_{c}}{\bar{k}_{s}}\right)\right]^{\frac{1}{1-\rho}}\right)=\left[\left(\frac{\nu(1-\omega)}{\omega\theta}\right)\left(\frac{\bar{k}_{c}}{\bar{k}_{s}}\right)\right]^{\frac{1}{1-\rho}}\left(1-\delta\bar{k}_{c}\right)
+\]
+ or equivalently
+\begin{equation}
+\frac{y_{s}}{y_{c}}=\frac{\left[\left(\frac{\nu(1-\omega)}{\omega\theta}\right)\left(\frac{\bar{k}_{c}}{\bar{k}_{s}}\right)\right]^{\frac{1}{1-\rho}}\left(1-\delta\bar{k}_{c}\right)}{\left(1+\delta\bar{k}_{s}\left[\left(\frac{\nu(1-\omega)}{\omega\theta}\right)\left(\frac{\bar{k}_{c}}{\bar{k}_{s}}\right)\right]^{\frac{1}{1-\rho}}\right)}\label{yratio}
+\end{equation}
+and substituting (\ref{yratio}) in (\ref{ss2}) we have 
+\begin{equation}
+1=\left(\frac{\omega(1-\theta)}{(1-\omega)(1-\nu)}\right)\left(\frac{1-\varphi}{\varphi}\right)\left(\frac{\left[Z\bar{k}_{s}^{\nu}\right]^{\frac{-1}{1-\nu}}}{\bar{n}}\right)^{\varrho}\left[\left(\frac{\theta\bar{k}_{s}}{\nu\bar{k}_{c}}\right)\left(\frac{\omega}{1-\omega}\right)\right]^{\frac{\varrho-\rho}{\rho-1}}\left(\frac{\left(1-\delta\bar{k}_{c}\right)}{1+\delta\bar{k}_{s}\left[\left(\frac{\nu(1-\omega)}{\omega\theta}\right)\left(\frac{\bar{k}_{c}}{\bar{k}_{s}}\right)\right]^{\frac{1}{1-\rho}}}\right)^{\varrho-1}\label{ssfinal}
+\end{equation}
+To compute the SS, we need to solve (\ref{ssfinal}) for $\bar{k}_{s}$.
+Finally we can back out $p$ using 
+\[
+p=\frac{\theta\bar{k}_{s}}{\nu\bar{k}_{c}}
+\]
+As a illustration let $\rho=0,\varrho=1$ and $\omega=\varphi=0.5$
+we can simplify (\ref{ssfinal}) to get 
+\[
+1=\left(\frac{(1-\theta)}{(1-\nu)}\right)\left(\frac{\left[Z\bar{k}_{s}^{\nu}\right]^{\frac{-1}{1-\nu}}}{\bar{n}}\right)\left[\frac{\theta\bar{k}_{s}}{\nu\bar{k}_{c}}\right]^{-1}
+\]
+Collecting terms with $\bar{k}_{s}$ we have 
+\[
+\bar{k}_{s}=\frac{1}{Z}\left[\left(\frac{(1-\theta)}{(1-\nu)}\right)\left(\frac{\bar{k}_{c}}{\bar{n}}\right)\left(\frac{\nu}{\theta}\right)\right]^{1-\nu}
+\]
+and 
+\[
+p=\left(\frac{\theta}{Z\nu\bar{k}_{c}}\right)\left[\left(\frac{(1-\theta)}{(1-\nu)}\right)\left(\frac{\bar{k}_{c}}{\bar{n}}\right)\left(\frac{\nu}{\theta}\right)\right]^{1-\nu}
+\]
+
+\begin{comment}
+Define constants $\left\{ \bar{n},\bar{k}_{c},\bar{c}_{c}\right\} $
+such that at the steady state we have $n=\bar{n}y_{c}$, $k_{c}=\bar{k}_{c}y_{c}$,
+and $c_{c}=\bar{c}_{c}y_{c}$. These constants are related to each
+other by:
+\[
+\bar{k}_{c}=\frac{\theta}{\frac{1}{\beta}-1+\delta}
+\]
+\[
+\bar{c}_{c}=1-\delta\bar{k_{c}}
+\]
+\[
+\bar{n}=\left[A\bar{k}_{c}^{\theta}\right]^{\frac{-1}{1-\theta}}
+\]
+If we fix $\beta$ to match some targeted values for $\bar{k}_{c}$
+the steady state boils down to solving the following two equations
+in two unknowns $\frac{y_{s}}{y_{c}},\bar{k}_{s}$. The detailed steps
+are given later
+
+\[
+\left(\frac{1}{\bar{c}_{c}}\right)^{\rho-1}\left(\frac{1-\omega}{\omega}\right)\left(\frac{y_{s}}{y_{c}}\right)^{\rho-1}=\frac{\theta\bar{k}_{s}}{\nu\bar{k}_{c}}
+\]
+\[
+\frac{(1-\omega)(1-\nu)}{\omega(1-\theta)\bar{c_{c}}^{\rho-1}}=\left(\frac{1-\varphi}{\varphi}\right)\left(\frac{\bar{m}(\bar{k}_{s})}{\bar{n}}\right)^{\varrho}\left(\frac{y_{s}}{y_{c}}\right)^{\varrho-\rho}
+\]
+where
+\[
+\bar{m}(\bar{k}_{s})=\left[Z\bar{k}_{s}^{\nu}\right]^{\frac{-1}{1-\nu}}
+\]
+This can be further simplified by substituting $\frac{y_{s}}{y_{c}}$
+to obtain one equation in $\bar{k}_{s}:$
+\[
+1=\left(\frac{\omega(1-\theta)}{(1-\omega)(1-\nu)}\right)\left(\frac{1-\varphi}{\varphi}\right)\left(\frac{\left[Z\bar{k}_{s}^{\nu}\right]^{\frac{-1}{1-\nu}}}{\bar{n}}\right)^{\varrho}\left[\left(\frac{\theta\bar{k}_{s}}{\nu\bar{k}_{c}}\right)\left(\frac{\omega}{1-\omega}\right)\right]^{\frac{\varrho-\rho}{\rho-1}}\left(\frac{1}{\bar{c}_{c}}\right)^{1-\varrho}
+\]
+Note this equation can be explicitly solved for $\bar{k}_{s}.$ Finally
+we can back out $p$ using 
+\[
+p=\frac{\theta\bar{k}_{s}}{\nu\bar{k}_{c}}
+\]
+
+
+\section{Detailed steps/verification}
+\end{comment}
+
+\begin{comment}
+
+\section{Static }
+
+Assume that there is no capital and no savings. Further restrict the
+productivities in both activities to satisfy $\log z=\delta_{0}+\delta_{1}\log\epsilon$
+
+HH solve 
+\[
+\max_{c_{c},c_{s},n,m}\frac{\left[\omega c_{c}^{\rho}+(1-\omega)c_{s}^{\rho}\right]^{\frac{1-\sigma}{\rho}}}{1-\sigma}-\frac{\left[\varphi n^{\varrho}+(1-\varphi)m^{\varrho}\right]^{\frac{1+\gamma}{\varrho}}}{1+\gamma}
+\]
+ subject to 
+\[
+c_{c}+pc_{s}=\epsilon n+pzm
+\]
+
+The FOC for this problem are 
+\[
+\omega c^{-\sigma}\left(\frac{c_{c}}{c}\right)^{\rho-1}=\phi
+\]
+\[
+(1-\omega)c^{-\sigma}\left(\frac{c_{s}}{c}\right)^{\rho-1}=p\phi
+\]
+\[
+\varphi l^{\gamma}\left(\frac{n}{l}\right)^{\varrho-1}=\epsilon\phi
+\]
+\[
+(1-\varphi)l^{\gamma}\left(\frac{m}{l}\right)^{\varrho-1}=pz\phi
+\]
+
+Thus for a given $p$ the ratios of consumptions and effort across
+goods are pinned down
+\[
+\frac{c_{s}}{c_{c}}=\left(\frac{p\omega}{1-\omega}\right)^{\frac{1}{\rho-1}}
+\]
+\[
+\frac{m}{n}=\left(\frac{p\varphi}{1-\varphi}\right)^{\frac{1}{\varrho-1}}\left(\frac{z}{\epsilon}\right)^{\frac{1}{\varrho-1}}
+\]
+
+Now to obtain the complete allocation use 
+
+\[
+c[c_{c}]\equiv\left[\omega c_{c}^{\rho}+(1-\omega)c_{s}^{\rho}\right]^{\frac{1}{\rho}}=\left[\omega+(1-\omega)\left(\frac{p\omega}{1-\omega}\right)^{\frac{\rho}{\rho-1}}\right]^{\frac{1}{\rho}}c_{c}
+\]
+\[
+l(n)\equiv\left[\varphi n^{\varrho}+(1-\varphi)m^{\varrho}\right]^{\frac{1}{\varrho}}=n\left[\varphi+(1-\varphi)\left(\frac{p\varphi}{1-\varphi}\right)^{\frac{\varrho}{\varrho-1}}\left(\frac{z}{\epsilon}\right)^{\frac{\varrho}{\varrho-1}}\right]^{\frac{1}{\varrho}}
+\]
+For a given $p$ we have
+\[
+\epsilon(1-\omega)\left[\omega+(1-\omega)\left(\frac{p\omega}{1-\omega}\right)^{\frac{\rho}{\rho-1}}\right]^{\frac{-\sigma(1-\rho)}{\rho}}c_{c}^{-\sigma(1-\rho)+\rho-1}=\varphi n^{\gamma(1-\varrho)+\varrho-1}\left[\varphi+(1-\varphi)\left(\frac{p\varphi}{1-\varphi}\right)^{\frac{\varrho}{\varrho-1}}\left(\exp\{\delta_{0}\}\epsilon^{\delta_{1}-1}\right)^{\frac{\varrho}{\varrho-1}}\right]^{\frac{\gamma(1-\varrho)}{\varrho}}
+\]
+
+\[
+\left[\left(\frac{p\omega}{1-\omega}\right)^{\frac{-1}{\rho-1}}+p\right]\left(\frac{p\omega}{1-\omega}\right)^{\frac{1}{\rho-1}}c_{c}=\epsilon n\left(\frac{p\varphi}{1-\varphi}\right)^{\frac{1}{\varrho-1}}\left(\exp\{\delta_{0}\}\epsilon^{\delta_{1}-1}\right)^{\frac{\varrho}{\varrho-1}}\left[\left(\frac{p\varphi}{1-\varphi}\right)^{\frac{-1}{\varrho-1}}\left(\exp\{\delta_{0}\}\epsilon^{\delta_{1}-1}\right)^{\frac{-\varrho}{\varrho-1}}+p\right]
+\]
+
+The market clearing conditions are 
+
+\[
+\int z_{i}m_{i}di=M=\int c_{s,i}di=C_{s}
+\]
+\[
+\int\epsilon_{i}n_{i}di=N=\int c_{c,i}di=C_{c}
+\]
+Thus we have 
+\[
+\frac{\int z_{i}m_{i}di}{\int\epsilon_{i}n_{i}di}=\left(\frac{p\omega}{1-\omega}\right)^{\frac{1}{\rho-1}}
+\]
+\[
+\left(\frac{p\varphi}{1-\varphi}\right)^{\frac{1}{\varrho-1}}\frac{\int\left(\exp\{\delta_{0}\}\epsilon^{\delta_{1}-1}\right)^{\frac{\varrho}{\varrho-1}}\epsilon_{i}n_{i}}{\int\epsilon_{i}n_{i}di}=\left(\frac{p\omega}{1-\omega}\right)^{\frac{1}{\rho-1}}
+\]
+\end{comment}
+
+
+\section{Rep agent with capital BGP preferences}
+
+We start with the Planner's problem since the welfare theorems hold
+in this case. The guess for $p$ can then be obtained from the optimal
+allocation. 
+\[
+\max_{c_{c},c_{s},n,m,k_{c},k_{s}}E_{0}\sum_{t}\beta^{t}\left\{ \frac{\left[\omega c_{c,t}^{\rho}+(1-\omega)c_{s,t}^{\rho}\right]^{\frac{\eta(1-\mu)}{\rho}}\left[1-\left[\varphi n_{t}^{\varrho}+(1-\varphi)m_{t}^{\varrho}\right]^{\frac{1}{\varrho}}\right]^{(1-\mu)(1-\eta)}}{1-\mu}\right\} 
+\]
+ subject to 
+\[
+c_{c}+k_{t+1}=(1-\delta)k_{t}+Ak_{c,t}^{\theta}n_{t}^{1-\theta}
+\]
+
+\[
+c_{s}=Zk_{s,t}^{\nu}m_{t}^{1-\nu}
+\]
+\[
+k_{c,t}+k_{s,t}=k_{t}
+\]
+Let $c\equiv\left[\omega c_{c,t}^{\rho}+(1-\omega)c_{s,t}^{\rho}\right]^{\frac{1}{\rho}}$,
+$h\equiv\left[\varphi n_{t}^{\varrho}+(1-\varphi)m_{t}^{\varrho}\right]^{\frac{1}{\varrho}}$
+and $l\equiv1-h$
+
+The F.O.C with respect to $c_{c},c_{s},n$
+\[
+\omega\eta c^{\left[\eta(1-\mu)-\rho\right]}l^{(1-\eta)(1-\mu)}c_{c}^{\rho-1}=\phi_{c}
+\]
+\[
+(1-\omega)\eta c^{\left[\eta(1-\mu)-\rho\right]}l^{(1-\eta)(1-\mu)}c_{s}^{\rho-1}=\phi_{s}
+\]
+\[
+\varphi(1-\eta)c^{\eta(1-\mu)}l^{(1-\mu)(1-\eta)-1}n^{\varrho-1}h^{1-\varrho}=\phi_{c}(1-\theta)\frac{y_{c}}{n}
+\]
+
+\[
+(1-\varphi)(1-\eta)c^{\eta(1-\mu)}l^{(1-\mu)(1-\eta)-1}m^{\varrho-1}h^{1-\varrho}=\phi_{s}(1-\nu)\frac{y_{s}}{m}
+\]
+\[
+1=\beta E\left[1-\delta+\theta\left(\frac{y_{c}}{k_{c}}\right)\right]
+\]
+\[
+\phi_{c}\theta\left(\frac{y_{c}}{k_{c}}\right)=\phi_{s}\nu\left(\frac{y_{s}}{k_{s}}\right)
+\]
+Divinf the first two equations we get 
+\[
+\frac{\phi_{c}}{\phi_{s}}=\left(\frac{\omega}{1-\omega}\right)\left(\frac{c_{c}}{c_{s}}\right)^{\rho-1}
+\]
+Then dividing the next two equations (focs with n and m)
+\[
+\left(\frac{\varphi}{1-\varphi}\right)\left(\frac{n}{m}\right)^{\varrho}=\left(\frac{\omega}{1-\omega}\right)\left(\frac{1-\theta}{1-\nu}\right)\left(\frac{y_{c}}{y_{s}}\right)\left(\frac{c_{c}}{c_{s}}\right)^{\rho-1}
+\]
+Lastly from the foc with $k_{s}$ we get
+\[
+\omega\theta\left(\frac{c_{c}}{c_{s}}\right)^{\rho-1}\left(\frac{y_{c}}{k_{c}}\right)=\nu(1-\omega)\left(\frac{y_{s}}{k_{s}}\right)
+\]
+We end up with the same expressions as before.
+\end{document}
